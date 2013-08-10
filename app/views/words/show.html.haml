@@ -1,0 +1,12 @@
+.row.panel
+	%h1
+		= @word.name
+	%h2.subheader
+		= @word.description
+	%p
+		= @word.example
+
+	= link_to 'Edit', edit_word_path(@word), :class => 'button'
+	= link_to 'Back', words_path, :class => 'button'
+	.button
+		Share with Facebook

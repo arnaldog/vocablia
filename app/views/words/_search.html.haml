@@ -1,0 +1,8 @@
+
+= form_tag("words", method: "get") do
+  .row.collapse
+    .row.collapse
+    .small-10.columns
+      %input{:placeholder => "Enter your search: hello world", :type => "text", :name => "query"}/
+    .small-2.columns
+      = submit_tag("Search", :class => 'button prefix')

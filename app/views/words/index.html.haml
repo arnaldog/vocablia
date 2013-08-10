@@ -1,0 +1,44 @@
+
+.row
+  .row
+    .small-6.large-6.columns
+      %h1 Words
+      %h2.subheader Listing Vocablia words
+    .small-6.large-6.columns
+      = render template: "words/_search"
+      .right
+        = foundation_paginate @Words
+  %table
+    %tr
+      %th{:width => 50} Name
+      %th{:width => 200}Description
+      %th Example
+      %th{:width => 150} Url
+      %th
+      %th
+      %th
+
+    - @words.each do |word|
+      %tr
+        %td= word.name
+        %td= word.description
+        %td= word.example
+        %td
+          %a.th.radius
+            = image_tag word.icon.url
+        %td= link_to 'Show', word, :class => 'button tiny'
+        %td= link_to 'Edit', edit_word_path(word),  :class => 'button tiny'
+        %td= link_to 'Destroy', word, :method => :delete, :data => { :confirm => 'Are you sure?' },  :class => 'button tiny alert'
+  .pagination-centered
+    = foundation_paginate @Words
+
+  .row
+    .small-6.large-6.columns
+      %h2.subheader Vocablia
+    .small-6.large-6.columns
+      = render template: "words/_search"
+      = link_to 'Create a new Vocablia Word', new_word_path, :class => 'button success large-12'
+  
+  
+
+  
