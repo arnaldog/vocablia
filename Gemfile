@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "1.9.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
@@ -50,7 +51,8 @@ gem 'haml-rails'
 # Fake data for seed
 gem 'populator'
 
-gem 'compass-rails', :git => 'git@github.com:Compass/compass-rails.git', :branch => 'rails4'
+#gem 'compass-rails', :git => 'git@github.com:Compass/compass-rails.git', :branch => 'rails4'
+gem 'compass-rails'
 gem 'zurb-foundation', '~> 4.0.0'
 
 
