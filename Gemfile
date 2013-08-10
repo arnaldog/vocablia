@@ -51,8 +51,8 @@ gem 'haml-rails'
 # Fake data for seed
 gem 'populator'
 
-#gem 'compass-rails', :git => 'git@github.com:Compass/compass-rails.git', :branch => 'rails4'
-gem 'compass-rails'
+gem 'compass-rails', :git => 'git@github.com:Compass/compass-rails.git', :branch => 'rails4'
+#gem 'compass-rails'
 gem 'zurb-foundation', '~> 4.0.0'
 
 
