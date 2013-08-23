@@ -51,12 +51,12 @@ gem 'haml-rails'
 # Fake data for seed
 gem 'populator'
 
-gem 'compass-rails', :git => 'git://github.com/Compass/compass-rails.git', :branch => 'rails4'
+gem 'compass-rails', :github => 'Compass/compass-rails', :branch => 'rails4'
 #gem 'compass-rails'
 gem 'zurb-foundation', '~> 4.0.0'
 
 
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip", :github => "thoughtbot/paperclip", :branch => 'rails-4'
 #gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git", :branch => 'rails-4'
 
 gem 'will_paginate'
@@ -71,5 +71,28 @@ gem 'meta-tags', :require => 'meta_tags'
 
 # Heroku gem integration
 gem 'rails_12factor', group: :production
+
+# Database localization
+#gem 'globalize3', github: 'svenfuchs/globalize3', :branch => 'rails4'
+
+gem 'devise', github: 'plataformatec/devise', :branch => 'rails4'
+
+# Simple calendar for model words
+gem "simple_calendar", :github => 'excid3/simple_calendar'
+
+# Datepicker
+gem 'foundation-datetimepicker-rails'
+
+# Search Engine Optimization (SEO) plugin for Ruby on Rails applications.
+gem 'meta-tags', :require => 'meta_tags'
+
+# Whenever is a Ruby gem that provides a clear syntax for writing and deploying cron jobs.
+gem 'whenever', :require => false
+
+# Configatron makes configuring your applications and scripts incredibly easy.
+gem 'configatron'
+
+
+
 
 

@@ -8,13 +8,7 @@
 				%h2.subheader The Social Vocabulary Tool
 				%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet id erat in ultricies. In fringilla eget quam in volutpat. Phasellus tempor consequat odio, nec convallis dui faucibus non. Morbi nec dapibus magna. Nulla eu auctor purus, in volutpat ante. Suspendisse potenti. Vestibulum nec placerat augue. Suspendisse potenti. Nam urna turpis, aliquam eget eleifend id, mollis a augue. Cras id volutpat orci. Vivamus vel nunc libero.
 			.large-4.columns
-				%h2 Sign up
-				.form
-					%input{:type => 'text', :placeholder => 'Pick a username'}
-					%input{:type => 'text', :placeholder => 'Your email'}
-					%input{:type => 'password', :placeholder => 'Create a password'}
-					%input.button.success.large-12{:type => 'submit', :value => 'Sign up for Vocablia'}
-
+				= render :template => '/devise/registrations/new'  
 
 	.row
 		.large-12.text-center
@@ -36,6 +30,49 @@
 		.large-12.text-center
 			%h2 The power of Vocablia	 on your desktop.
 			%p Browse repositories, create and manage branches, and commit changes—all from your desktop.
-			%a.large.button{:href => '#'}  Download Github for Mac
+			%a.large.button{:href => '#'}  Contact Us
 			%p 
 				%small Requires OS X 10.7+ 
+
+
+%hr
+	.row
+		%h1.subheader Features
+		%p
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a velit ut lorem congue porta. Duis fringilla felis urna, et viverra purus rutrum non. Nullam dignissim adipiscing arcu, id ultrices velit semper in.
+
+		.small-4.large-3.columns
+			%h4 Visualization
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio eros, sodales nec viverra quis, feugiat accumsan tortor. Aenean aliquam lectus tellus, nec semper velit tincidunt ac.
+
+		.small-4.large-3.columns
+			%h4 Collaboration
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio eros, sodales nec viverra quis, feugiat accumsan tortor. Aenean aliquam lectus tellus, nec semper velit tincidunt ac.
+		.small-4.large-3.columns
+			%h4 Data Acquiring
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio eros, sodales nec viverra quis, feugiat accumsan tortor. Aenean aliquam lectus tellus, nec semper velit tincidunt ac.
+
+		.small-4.large-3.columns
+			%h4 Data Minning
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio eros, sodales nec viverra quis, feugiat accumsan tortor. Aenean aliquam lectus tellus, nec semper velit tincidunt ac.
+
+		%hr
+
+		.small-4.large-4.columns
+			%h5 Manage Teams with Organization
+			%h6.subheader Manage the co working with data visualization
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio eros, sodales nec viverra quis, feugiat accumsan tortor. Aenean aliquam lectus tellus, nec semper velit tincidunt ac.
+
+			%h5 Shared Administration
+			%h6.subheader Manage the co working with data visualization
+			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla odio eros, sodales nec viverra quis, feugiat accumsan tortor. Aenean aliquam lectus tellus, nec semper velit tincidunt ac.
+
+
+		.small-4.large-8.panel.columns.centered
+			%img{:src => 'https://github.global.ssl.fastly.net/images/modules/features/screenshots/teams.png'}
+
+		%hr
+
+
+
+

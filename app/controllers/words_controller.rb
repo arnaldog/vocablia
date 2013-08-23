@@ -1,4 +1,7 @@
 class WordsController < ApplicationController
+
+  before_filter :authenticate_user!, :except => [:show]
+  
   before_action :set_word, only: [:show, :edit, :update, :destroy]
 
   # GET /words
@@ -14,6 +17,10 @@ class WordsController < ApplicationController
   # GET /words/1
   # GET /words/1.json
   def show
+  end
+
+  # GET /words/name
+  def show_by_name
   end
 
   # GET /words/new
@@ -68,7 +75,7 @@ class WordsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_word
-      @word = Word.find(params[:id])
+      @word = Word.find_by_id(params[:id].to_i % Word.count) || Word.find_by_name(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

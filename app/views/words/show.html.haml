@@ -1,11 +1,26 @@
-.row.panel
-	%h1
-		= @word.name
-	%h2.subheader
-		= @word.description
-	%p
-		= @word.example
+- content_for :head do
+	%meta{:content => "#{@word.name}", :property => "og:title"}
+	%meta{:content => "activity", :property => "og:type"}
+	%meta{:content => "#{request.original_url}", :property => "og:url"}
+	%meta{:content => "#{request.original_url}#{@word.icon}", :property => "og:image"}
+	%meta{:content => "Vocablia", :property => "og:site_name"}
+	%meta{:content => "#{@word.description}", :property => "og:description"}
 
+.row.panel
+	%h2
+		= @word.name
+	%h3.subheader
+		= @word.description
+	.row
+		.large-6.columns
+			%blockquote
+				= '"' + @word.example + '"'
+				%cite
+					Vocablia
+		.large-6.columns
+			= image_tag @word.icon.url
+
+- if user_signed_in?
 	= link_to 'Edit', edit_word_path(@word), :class => 'button'
 	= link_to 'Back', words_path, :class => 'button'
 	.button

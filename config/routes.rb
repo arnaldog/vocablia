@@ -1,4 +1,5 @@
 Vocablia::Application.routes.draw do
+  devise_for :users
   root 'home#index'
 
   get "contact" => "home#contact"
@@ -6,7 +7,9 @@ Vocablia::Application.routes.draw do
   get "login"   =>"home#login"   
   get "explore" => "home#explore"
   get "blog"    => "home#blog"
-  get "search" 	=> "words#search"    
+  get "search" 	=> "words#search"
+
 
   resources :words
-end
+  get ":id" => "words#show"
+end 

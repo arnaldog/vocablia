@@ -15,7 +15,10 @@
     = f.text_area :description, :placeholder => 'Enter here a brief word description' 
 
     = f.label :example
-    = f.text_area :example, :placeholder => 'Enter here an easy example of the word usage ' 
+    = f.text_area :example, :placeholder => 'Enter here an easy example of the word usage' 
+
+    = f.label :start_time
+    = f.date_field :start_time
 
   %fieldset
     %legend Media

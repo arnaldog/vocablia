@@ -1,3 +1,8 @@
+.row
+
+  .panel.center
+    = calendar @words do |word|
+      = link_to word.name, word
 
 .row
   .row
@@ -38,7 +43,7 @@
     .small-6.large-6.columns
       = render template: "words/_search"
       = link_to 'Create a new Vocablia Word', new_word_path, :class => 'button success large-12'
-  
+
   
 
   

@@ -15,7 +15,7 @@
 #end
 
 ## Real Production Data
-Word.create :name =>"Paspartú", :description =>"Recuadro de cartón o tela que se pone entre el marco y el objeto enmarcado para que este resalte o destaque más", :example => "me recomendó usar un paspartú grande y claro para realzar los colores de la pintura", :icon => File.open("#{Rails.root}/app/assets/terms/paspartu.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/paspartu.mp3")
+	Word.create :name =>"Paspartú", :description =>"Recuadro de cartón o tela que se pone entre el marco y el objeto enmarcado para que este resalte o destaque más", :example => "me recomendó usar un paspartú grande y claro para realzar los colores de la pintura", :icon => File.open("#{Rails.root}/app/assets/terms/paspartu.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/paspartu.mp3")
 Word.create :name =>"Galimatías", :description =>"Lenguaje enrevesado. Confusión, lío", :example => "Cantinflas usaba el galimatías como parte de su acto", :icon => File.open("#{Rails.root}/app/assets/terms/galimatias.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/galimatias.mp3")
 Word.create :name =>"Albocracia", :description =>"Dominio de la raza blanca", :example => "aunque no se reconozca oficialmente, la albocracia es una práctica extendida en los gobiernos más conservadores de latinoamérica", :icon => File.open("#{Rails.root}/app/assets/terms/albocracia.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/albocracia.mp3")
 Word.create :name =>"Alóctono", :description =>"Originario de otro país", :example => "no le entendimos, pues hablaba una lengua alóctona", :icon => File.open("#{Rails.root}/app/assets/terms/aloctono.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/aloctono.mp3")
