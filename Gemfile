@@ -92,6 +92,8 @@ gem 'whenever', :require => false
 # Configatron makes configuring your applications and scripts incredibly easy.
 gem 'configatron'
 
+# Rapns - Professional grade APNs and GCM for Ruby.
+gem 'rapns', :github => 'ileitch/rapns'
 
 
 
