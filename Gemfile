@@ -92,6 +92,9 @@ gem 'whenever', :require => false
 # Configatron makes configuring your applications and scripts incredibly easy.
 gem 'configatron'
 
+group :development do
+  gem 'sqlite3'
+end
 
 
 
