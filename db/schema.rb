@@ -17,13 +17,16 @@ ActiveRecord::Schema.define(version: 20130824024737) do
   enable_extension "plpgsql"
 
   create_table "devices", force: true do |t|
-    t.string   "token"
+    t.text     "token"
     t.string   "platform"
     t.float    "latitude"
     t.float    "longitude"
+    t.datetime "schedule"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "devices", ["token"], name: "index_devices_on_token", unique: true, using: :btree
 
   create_table "rapns_apps", force: true do |t|
     t.string   "name",                    null: false

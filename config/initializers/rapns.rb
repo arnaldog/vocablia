@@ -1,10 +1,14 @@
  # Rapns configuration. Options set here are overridden by command-line options.
 
-#app = Rapns::Gcm::App.new
-#app.name = "vocablia"
-#app.auth_key = "AIzaSyD04kUE81GdPkIa6QFlvGgraqZUzVKSy0Q"
-#app.connections = 1
-#app.save!
+
+
+#if not Rapns::Gcm::App.find_by_name("vocablia")
+#  app = Rapns::Gcm::App.new
+#  app.name = "vocablia"
+#  app.auth_key = "AIzaSyD04kUE81GdPkIa6QFlvGgraqZUzVKSy0Q"
+#  app.connections = 1
+#  app.save!
+#end
 
 #n = Rapns::Gcm::Notification.new
 #n.app = Rapns::Gcm::App.find_by_name("vocablia")
@@ -12,7 +16,7 @@
 #n.data = {:message => "hi mom!"}
 #n.save!
 
-Rapns.push
+#Rapns.push
 
  Rapns.configure do |config|
 
