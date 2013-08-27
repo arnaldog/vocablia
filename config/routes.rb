@@ -1,4 +1,6 @@
 Vocablia::Application.routes.draw do
+  resources :devices
+
   devise_for :users
   root 'home#index'
 

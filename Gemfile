@@ -95,6 +95,8 @@ gem 'configatron'
 group :development do
   gem 'sqlite3'
 end
+# Rapns - Professional grade APNs and GCM for Ruby.
+gem 'rapns', :github => 'ileitch/rapns'
 
 
 

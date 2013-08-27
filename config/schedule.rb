@@ -18,3 +18,10 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+
+
+# Every minute look for notifications for each user
+every '*/1 * * * *' do
+	runner "Device.deliver"
+end
+

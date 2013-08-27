@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Token:
+  = @device.token
+%p
+  %b Platform:
+  = @device.platform
+%p
+  %b Latitude:
+  = @device.latitude
+%p
+  %b Longitude:
+  = @device.longitude
+
+= link_to 'Edit', edit_device_path(@device)
+\|
+= link_to 'Back', devices_path
