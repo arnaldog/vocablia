@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Mac files.
+.DS_Store
+
+# Ignore Vim files.
+*.un~
