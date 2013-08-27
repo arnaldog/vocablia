@@ -1,28 +1,13 @@
-# -*- coding: utf-8 -*-
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-#
+#coding: utf-8
 
-
-## Fake data
-#365.times.each do |day|
-#  Word.create :name => Populator.words(1), :description => Populator.sentences(1), :example => Populator.sentences(1)
-#end
-
-## Real Production Data
-Word.create :name =>"Paspartú", :description =>"Recuadro de cartón o tela que se pone entre el marco y el objeto enmarcado para que este resalte o destaque más", :example => "me recomendó usar un paspartú grande y claro para realzar los colores de la pintura", :icon => File.open("#{Rails.root}/app/assets/images/terms/paspartu.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/paspartu.mp3")
-Word.create :name =>"Galimatías", :description =>"Lenguaje enrevesado. Confusión, lío", :example => "Cantinflas usaba el galimatías como parte de su acto", :icon => File.open("#{Rails.root}/app/assets/images/terms/galimatias.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/galimatias.mp3")
-Word.create :name =>"Albocracia", :description =>"Dominio de la raza blanca", :example => "aunque no se reconozca oficialmente, la albocracia es una práctica extendida en los gobiernos más conservadores de latinoamérica", :icon => File.open("#{Rails.root}/app/assets/images/terms/albocracia.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/albocracia.mp3")
-Word.create :name =>"Alóctono", :description =>"Originario de otro país", :example => "no le entendimos, pues hablaba una lengua alóctona", :icon => File.open("#{Rails.root}/app/assets/images/terms/aloctono.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/aloctono.mp3")
-Word.create :name =>"Coscarse", :description =>"Percatarse o darse cuenta de algo", :example => "no fue hasta que llegó al auto cuando se coscó de que había dejado las llaves adentro", :icon => File.open("#{Rails.root}/app/assets/images/terms/coscarse.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/coscarse.mp3")
-Word.create :name =>"Farallón", :description =>"Roca alta y cortada verticalmente que sobresale en el mar o en la costa", :example => "los farallones de la bahía de Ha Long encierran una hermosa leyenda vietnamita", :icon => File.open("#{Rails.root}/app/assets/images/terms/farallon.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/farallon.mp3")
-Word.create :name =>"Calostro", :description =>"Primera leche de color amarillento claro que da la hembra después de parida", :example => "el calostro tiene menos contenido energético que la leche definitiva, pero contiene más proteínas, adapatándose mejor a las necesidades del recién nacido", :icon => File.open("#{Rails.root}/app/assets/images/terms/calostro.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/calostro.mp3")
-Word.create :name =>"Exultar", :description =>"Saltar de alegría, no caber en sí de gozo", :example => "exultó de júbilo al saber que se convertiría en padre", :icon => File.open("#{Rails.root}/app/assets/images/terms/exultar.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/exultar.mp3")
+Word.create :name => "Paspartú", :description =>"Recuadro de cartón o tela que se pone entre el marco y el objeto enmarcado para que este resalte o destaque más", :example => "me recomendó usar un paspartú grande y claro para realzar los colores de la pintura", :icon => File.open("#{Rails.root}/app/assets/images/terms/paspartu.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/paspartu.mp3")
+Word.create :name => "Galimatías", :description =>"Lenguaje enrevesado. Confusión, lío", :example => "Cantinflas usaba el galimatías como parte de su acto", :icon => File.open("#{Rails.root}/app/assets/images/terms/galimatias.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/galimatias.mp3")
+Word.create :name => "Albocracia", :description =>"Dominio de la raza blanca", :example => "aunque no se reconozca oficialmente, la albocracia es una práctica extendida en los gobiernos más conservadores de latinoamérica", :icon => File.open("#{Rails.root}/app/assets/images/terms/albocracia.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/albocracia.mp3")
+Word.create :name => "Alóctono", :description =>"Originario de otro país", :example => "no le entendimos, pues hablaba una lengua alóctona", :icon => File.open("#{Rails.root}/app/assets/images/terms/aloctono.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/aloctono.mp3")
+Word.create :name => "Coscarse", :description =>"Percatarse o darse cuenta de algo", :example => "no fue hasta que llegó al auto cuando se coscó de que había dejado las llaves adentro", :icon => File.open("#{Rails.root}/app/assets/images/terms/coscarse.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/coscarse.mp3")
+Word.create :name => "Farallón", :description =>"Roca alta y cortada verticalmente que sobresale en el mar o en la costa", :example => "los farallones de la bahía de Ha Long encierran una hermosa leyenda vietnamita", :icon => File.open("#{Rails.root}/app/assets/images/terms/farallon.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/farallon.mp3")
+Word.create :name => "Calostro", :description =>"Primera leche de color amarillento claro que da la hembra después de parida", :example => "el calostro tiene menos contenido energético que la leche definitiva, pero contiene más proteínas, adapatándose mejor a las necesidades del recién nacido", :icon => File.open("#{Rails.root}/app/assets/images/terms/calostro.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/calostro.mp3")
+Word.create :name => "Exultar", :description =>"Saltar de alegría, no caber en sí de gozo", :example => "exultó de júbilo al saber que se convertiría en padre", :icon => File.open("#{Rails.root}/app/assets/images/terms/exultar.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/exultar.mp3")
 Word.create :name => "Mampostería", :description =>"Procedimiento de construcción en que se unen las piedras con argamasa sin ningún orden de hiladas o tamaños", :example => "el acceso al funicular fue construido en mampostería, lo que le otorga un estilo medieval", :icon => File.open("#{Rails.root}/app/assets/images/terms/mamposteria.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/mamposteria.mp3")
 Word.create :name => "Cenáculo", :description =>"Reunión de pocas personas con aficiones comunes", :example => "en los cenáculos literarios del 27 se redescubrió la poesía gongorina", :icon => File.open("#{Rails.root}/app/assets/images/terms/cenaculo.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/cenaculo.mp3")
 Word.create :name => "Logomaquia", :description =>"Discusión en la cual se atiende más a las palabras que al fondo del asunto", :example => "estás cayendo en una logomaquia que nos aleja del tema en cuestión", :icon => File.open("#{Rails.root}/app/assets/images/terms/logomaquia.png"), :audio => File.open("#{Rails.root}/app/assets/sounds/logomaquia.mp3")

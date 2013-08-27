@@ -23,3 +23,4 @@
 
 # Ignore Vim files.
 *.un~
+public/system
