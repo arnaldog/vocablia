@@ -6,8 +6,9 @@ class CreateDevices < ActiveRecord::Migration
       t.float :latitude
       t.float :longitude
       t.datetime :schedule ## Un device tiene un schedule
+      t.boolean :notification
 
-      t.timestamps
+      t.timestamps  # Created at and updated at
     end
     add_index :devices, :token, :unique => true
 

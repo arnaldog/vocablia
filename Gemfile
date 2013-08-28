@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+ruby "1.9.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.0.rc1'
 
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -92,9 +92,6 @@ gem 'whenever', :require => false
 # Configatron makes configuring your applications and scripts incredibly easy.
 gem 'configatron'
 
-group :development do
-  gem 'sqlite3'
-end
 # Rapns - Professional grade APNs and GCM for Ruby.
 gem 'rapns', :github => 'ileitch/rapns'
 
