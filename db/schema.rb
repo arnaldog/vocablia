@@ -16,9 +16,10 @@ ActiveRecord::Schema.define(version: 20130827041221) do
   create_table "devices", force: true do |t|
     t.text     "token"
     t.string   "platform"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.datetime "schedule"
+    t.float    "latitude",     default: 0.0
+    t.float    "longitude",    default: 0.0
+    t.string   "schedule",     default: "9:00"
+    t.boolean  "notification", default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
