@@ -1,6 +1,7 @@
 #coding: utf-8
 
 Word.create :name => "Paspartú", :description =>"Recuadro de cartón o tela que se pone entre el marco y el objeto enmarcado para que este resalte o destaque más", :example => "me recomendó usar un paspartú grande y claro para realzar los colores de la pintura", :icon => File.open("public/images/terms/paspartu.png"), :audio => File.open("public/sounds/paspartu.mp3")
+=begin
 Word.create :name => "Galimatías", :description =>"Lenguaje enrevesado. Confusión, lío", :example => "Cantinflas usaba el galimatías como parte de su acto", :icon => File.open("public/images/terms/galimatias.png"), :audio => File.open("public/sounds/galimatias.mp3")
 Word.create :name => "Albocracia", :description =>"Dominio de la raza blanca", :example => "aunque no se reconozca oficialmente, la albocracia es una práctica extendida en los gobiernos más conservadores de latinoamérica", :icon => File.open("public/images/terms/albocracia.png"), :audio => File.open("public/sounds/albocracia.mp3")
 Word.create :name => "Alóctono", :description =>"Originario de otro país", :example => "no le entendimos, pues hablaba una lengua alóctona", :icon => File.open("public/images/terms/aloctono.png"), :audio => File.open("public/sounds/aloctono.mp3")
@@ -89,3 +90,4 @@ Word.create :name => "Hedonista", :description =>"Alguien cuyo fin supremo es la
 Word.create :name => "Impronta", :description =>"Huella que permanece en el tiempo debido a las acciones de uno", :example => "el arquitecto dejó su impronta personal en cada una de sus obras", :icon => File.open("public/images/terms/impronta.png"), :audio => File.open("public/sounds/impronta.mp3")
 Word.create :name => "Simbiosis", :description =>"Convivencia y cooperación estrecha entre organismos dispares", :example => "hoy en día no podemos imaginar el mundo del deporte profesional sin esa simbiosis entre deportista y publicidad", :icon => File.open("public/images/terms/simbiosis.png"), :audio => File.open("public/sounds/simbiosis.mp3")
 
+=end
