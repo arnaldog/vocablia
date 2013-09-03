@@ -21,7 +21,14 @@ class Word < ActiveRecord::Base
 
 
 	def start_time
-		DateTime.ordinal Time.new.year, self.id % 365
+		DateTime.now
+		#DateTime.ordinal Time.new.year, self.id % 365
+	end
+
+
+	def all_words
+		# el año completo en fechas
+		Array(DateTime.new(2013, 1, 1)..DateTime.now)
 	end
 
 end

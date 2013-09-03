@@ -12,3 +12,31 @@
  *= require_tree .
  *= require foundation_and_overrides
  */
+.calendar td { 
+	height: 50px;
+	width: 200px;
+}
+
+.headpanel {
+	background: #f15a24;
+}
+
+#the_team { 
+	padding: 30px 0 30px 0; }
+
+#the_team .info { 
+	padding: 1.25em; 
+	background: #f15a24;
+	margin-bottom: 1.25em;
+	max-width: 470px; }
+
+/*@media only screen and (max-width: 767px)
+{ #the_team .info { max-width: 470px; } }*/
+	
+#the_team .info h3, #the_team .info p { 
+	color: #ffffff;
+	margin-top: 0em;
+	margin-bottom: 0em; }
+
+#the_team img { 
+	margin-bottom: 0em; }

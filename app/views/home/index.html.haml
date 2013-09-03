@@ -2,26 +2,28 @@
   .panel
     .row
       .large-8.columns
-        %h1 Vocablia
-        %h2.subheader La palabra del día
-        %p Vocablia es una aplicación para smartphones cuyo objetivo es el de promover la lengua hispana y mejorar el léxico de las personas a través de la difusión de palabras poco frecuentes con su pronunciación e imágenes descriptivas.
+        %h1
+          Vocablia.
+          %small La palabra del día.
+        %blockquote
+          Esta aplicación promueve la educación o actualización permanente de los usuarios, incentivando un léxico más amplio y culto. En una época donde las nuevas tecnologías tienden, precisamente, a una máxima economía y simplicación del lenguaje, Vocablia emerge como un esfuerzo por conservar la norma culta formal del español
+          %cite 
+            Fundación Que Veo
       .large-4.columns
-        - if user_signed_in? then
-          Usuario autenticado.
-        - else
+        - if not user_signed_in? then
           = render :template => '/devise/registrations/new'  
 
   .row
     .large-12.text-center
-      %h2.subheader Porqué amarás Vocablia.
+      %h2.subheader Amarás Vocablia tanto como nosotros.
       %p Una aplicación muy simple, para hacer crecer el vocabulario.
     .large-4.columns.text-center
       %h4.subheader Recibe una palabra al día.
       %p A través de Vocablia, recibe una palabra distinta cada día. Además puedes configurar el horario de notificación de la palabra para que la puedas practicar durante el día.
 
     .large-4.columns.text-center
-      %h4.subheader Diferentes pronunciaciones.
-      %p Graba tu pronunciación de la palabra del día y revisa las de los demás durante el día. Diviertete aumentando tu léxico escuchando pronunciaciones seleccionadas de otros usuarios.
+      %h4.subheader Pronunciaciones y gráficos.
+      %p Escucha la pronunciación de cada palabra a medida que te recomendamos durante el año. Memoriza las palabras con un gráfico de ayuda.
 
     .large-4.columns.text-center
       %h4.subheader Sugiere tus palabras.
@@ -31,20 +33,89 @@
   %hr
   .row
     .large-12.text-center
-      %h2 Obtén el poder de Vocablia en tus manos
+      %h2 Vocablia en tus manos.
       %p Descarga la aplicación Vocablia para tu i-phone o Andoroid.
-      %a.large.button.success{:href => '#'}  Android
-      %a.large.button{:href => '#'}  Iphone
-      %p 
-        %small Para versiones android superiores a 4.1.2+ 
+      .row
+        %ul.no-bullet
+          .large-3.columns
+            %li
+              %a.th.radius
+                %img{:src => '/assets/android-main.png'}
+          .large-3.columns
+            %li
+              %a.th.radius
+                %img{:src => '/assets/android-swipe.png'}
+          .large-3.columns
+            %li
+              %a.th.radius
+                %img{:src => '/assets/iphone-main.jpg'}
+          .large-3.columns
+            %li
+              %a.th.radius
+                %img{:src => '/assets/iphone-swipe.jpg'}
+      %br
+      .row
+        %a{:href => "https://play.google.com/store/apps/details?id=cl.ingennia.vocablia"}
+          %img{:alt => "Google Play", :src => "https://developer.android.com/images/brand/en_generic_rgb_wo_60.png"}
 
+  %hr
 
-  .container
-  .row.text-center
-    y si te animas ...
-    %h1.subheader
-      Contáctanos en
-      %small contacto@vocablia.cl
+  .row
+    .large-12.columns
+      %h1
+        El equipo.
+        %small Fanáticos de la tecnología y la cultura.
+
+    // Arnaldo Gaspar
+    // Javier Giovannini
+    // Felipe Chaparro
+    // Luis Ortega
+    %ul.no-bullet 
+      .large-3.columns.text-center
+        %li
+          %a.th.radius
+            %img{:src => '/assets/javier.png'}
+          %h3
+            Javier Giovannini.
+            %small Desarrollador iPhone.
+      .large-3.columns.text-center
+        %li
+          %a.th.radius
+            %img{:src => '/assets/arnaldo.png'}
+          %h3
+            Arnaldo Gaspar.
+            %small Desarrollador Android y Web.
+      .large-3.columns.text-center
+        %li
+          %a.th.radius
+            %img{:src => '/assets/felipe.jpg'}
+          %h3
+            Felipe Chaparro.
+            %small Diseñador Gráfico.
+      .large-3.columns.text-center
+        %li
+          %a.th.radius
+            %img{:src => '/assets/luis.jpg'}
+          %h3
+            Luis Ortega.
+            %small Colaborador Desarrollo.
+  %hr      
+  .row
+    .large-6.columns
+      %h2.subheader
+        Prensa
+        %small y premios.
+      %ul.no-bullet
+        %li
+          %a{:href =>"http://www.queveo.cl/2013/08/29/ganadores-apps-y-uso-responsable-de-celulares/"}
+            %p Nota emol.
+        %li
+          %a{:href =>"http://www.queveo.cl/2013/08/29/ganadores-apps-y-uso-responsable-de-celulares/"}
+            %p Premio fundación Que Veo.
+    .large-6.columns.text-center
+      %h1.subheader
+        Contáctanos en
+        %small contacto@vocablia.cl
 
 
 

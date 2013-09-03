@@ -4,4 +4,8 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  def start_time
+  	DateTime.ordinal Time.new.year, self.id % 365
+  end
 end

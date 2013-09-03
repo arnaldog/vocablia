@@ -1,7 +1,7 @@
 .row
 
-  .panel.center
-    = calendar @words do |word|
+  .row.text-center
+    = calendar @words,  :start_day => :monday do |word|
       = link_to word.name, word
 
 .row
