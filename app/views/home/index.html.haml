@@ -1,5 +1,5 @@
 .container
-  .home
+  .panel
     .row
       .large-8.columns
         %h1
@@ -10,7 +10,7 @@
           %cite 
             Fundación Que Veo
       .large-4.columns
-        - if not user_signed_in? then
+        - if user_signed_in? then
           = render :template => '/devise/registrations/new' 
            
 
