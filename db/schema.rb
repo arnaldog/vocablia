@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20130827041221) do
     t.string   "platform"
     t.float    "latitude",     default: 0.0
     t.float    "longitude",    default: 0.0
-    t.string   "schedule",     default: "9:00"
+    t.datetime "schedule",     default: '2013-09-06 02:07:20'
     t.boolean  "notification", default: true
     t.datetime "created_at"
     t.datetime "updated_at"

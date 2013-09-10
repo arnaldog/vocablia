@@ -1,23 +1,33 @@
 .row
+  %br
+  %dl.sub-nav
+    %dt Filter:
+    %dd.active
+      %a{:href => "#"} Calendario
+    %dd
+      %a{:href => "#"} Aprobadas
+    %dd
+      %a{:href => "#"} Pendientes
+    %dd
+      %a{:href => "#"} Rechazadas
 
   .row.text-center
     = calendar @words,  :start_day => :monday do |word|
       = link_to word.name, word
-
 .row
   .row
     .small-6.large-6.columns
-      %h1 Words
-      %h2.subheader Listing Vocablia words
+      %h1 Palabras
+      %h2.subheader Listando de todo el catálogo
     .small-6.large-6.columns
       = render template: "words/_search"
       .right
         = foundation_paginate @Words
   %table
     %tr
-      %th{:width => 50} Name
-      %th{:width => 200}Description
-      %th Example
+      %th{:width => 50} Nombre
+      %th{:width => 200} Descripción
+      %th Ejemplo
       %th{:width => 150} Url
       %th
       %th

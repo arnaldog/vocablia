@@ -6,14 +6,15 @@
 
   %section.top-bar-section
     %ul.right
-      %li.divider
-      -#  %li
-      -#    %a{:href => '/explore'} Explore
+
       -#%li.divider
       -#  %li
       -#    %a{:href => '/contact'} Contact Us
       %li.divider
         - if user_signed_in?
+          %li.divider
+            %li
+              %a{:href => '/words'} Palabras
           %li
             = link_to('Salir', destroy_user_session_path, :method => :delete)
         - else

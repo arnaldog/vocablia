@@ -22,6 +22,6 @@
 
 # Every minute look for notifications for each user
 every '*/1 * * * *' do
-	runner "Device.deliver"
+	runner "Device.deliver_messages"
 end
 

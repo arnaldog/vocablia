@@ -26,6 +26,11 @@ class Word < ActiveRecord::Base
 	end
 
 
+	def self.today
+		Word.find_by_id(Date.today.yday() % Word.count + 1)
+	end
+
+
 	def all_words
 		# el año completo en fechas
 		Array(DateTime.new(2013, 1, 1)..DateTime.now)

@@ -76,7 +76,7 @@ class WordsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_word
       #@word = Word.find_by_id(params[:id].to_i % Word.count) || Word.find_by_name(params[:id])
-      @word = Word.find_by_id(params[:id].to_i) || Word.find_by_name(params[:id])      
+      @word = Word.find_by_id(params[:id].to_i % Word.count + 1) || Word.find_by_name(params[:id])      
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

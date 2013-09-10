@@ -19,7 +19,7 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
-//$body-bg: url('/assets/background.png');
+$body-bg: url('/assets/background.png');
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -677,8 +677,8 @@ $subheader-font-color: lighten($header-font-color, 20%);
 
 // We use these to control the background and border styles
 // $panel-bg: darken(#fff, 5%);
-// $panel-bg: darken(#fff, 1%);
-// $panel-bg: darken(#f00, 10%);;
+$panel-bg: darken(#fff, 3%);
+// $panel-bg: url('/assets/background.png');
 // $panel-bg: #000;
  $panel-border-style: solid;
 // $panel-border-size: 1px;
