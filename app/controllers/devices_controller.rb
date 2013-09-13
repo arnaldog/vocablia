@@ -24,6 +24,7 @@ class DevicesController < ApplicationController
   def edit
   end
 
+
   # POST /devices
   # POST /devices.json
   def create
@@ -67,7 +68,7 @@ class DevicesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_device
-      @device = Device.find(params[:id])
+      @device = Device.find_by_id(params[:id]) || Device.find_by_token(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
