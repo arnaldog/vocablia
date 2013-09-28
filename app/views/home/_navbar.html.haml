@@ -10,16 +10,17 @@
       -#%li.divider
       -#  %li
       -#    %a{:href => '/contact'} Contact Us
-      %li.divider
-        - if user_signed_in?
-          %li.divider
+      /
+        %li.divider
+          - if user_signed_in?
+            %li.divider
+              %li
+                %a{:href => '/words'} Palabras
             %li
-              %a{:href => '/words'} Palabras
-          %li
-            = link_to('Salir', destroy_user_session_path, :method => :delete)
-        - else
-          %li
-            = link_to('Ingresar', new_user_session_path)
+              = link_to('Salir', destroy_user_session_path, :method => :delete)
+          - else
+            %li
+              = link_to('Ingresar', new_user_session_path)
             
 
 

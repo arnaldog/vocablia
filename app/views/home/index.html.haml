@@ -1,12 +1,12 @@
 .container
   .panel
     .row
-      .large-8.columns
+      .large-12.columns
         %h1
           Vocablia.
           %small La palabra del día.
         %blockquote
-          Esta aplicación promueve la educación o actualización permanente de los usuarios, incentivando un léxico más amplio y culto. En una época donde las nuevas tecnologías tienden, precisamente, a una máxima economía y simplicación del lenguaje, Vocablia emerge como un esfuerzo por conservar la norma culta formal del español
+          Esta aplicación promueve la educación o actualización permanente de los usuarios, incentivando un léxico más amplio y culto. En una época donde las nuevas tecnologías tienden, precisamente, a una máxima economía y simplicación del lenguaje, Vocablia emerge como un esfuerzo por conservar la norma culta formal del español.
           %cite 
             Fundación Que Veo
       .large-4.columns
@@ -18,17 +18,25 @@
     .large-12.text-center
       %h2.subheader Amarás Vocablia tanto como nosotros.
       %p Una aplicación muy simple, para hacer crecer el vocabulario.
-    .large-4.columns.text-center
-      %h4.subheader Recibe una palabra al día.
-      %p A través de Vocablia, recibe una palabra distinta cada día. Además puedes configurar el horario de notificación de la palabra para que la puedas practicar durante el día.
 
-    .large-4.columns.text-center
-      %h4.subheader Pronunciaciones y gráficos.
-      %p Escucha la pronunciación de cada palabra a medida que te recomendamos durante el año. Memoriza las palabras con un gráfico de ayuda.
+    .large-3.columns.text-center
+      /%img{:src => '/assets/android-main.png'}
+      %h4.subheader Una palabra
+      %p Recibe una palabra distinta a la hora que elijas. Practícala y mejora tu léxico.
 
-    .large-4.columns.text-center
-      %h4.subheader Sugiere tus palabras.
-      %p Sugiere tu palabra para ser incluída durante los próximos días. Además, podrás moderar distintas palabras sugeridas por los distintos usarios y ganar reputación Vocablia.
+    .large-3.columns.text-center
+      /%img{:src => '/assets/android-main.png'}
+      %h4.subheader Cada día
+      %p Escucha una pronunciación, la descripción breve y un ejemplo de empleo de la palabra. 
+    .large-3.columns.text-center
+      /%img{:src => '/assets/android-main.png'}
+      %h4.subheader Para ti
+      %p Te ayudamos a memorizar las palabras a través de una ilustración de referencia.
+
+    .large-3.columns.text-center
+      /%img{:src => '/assets/android-main.png'}
+      %h4.subheader Y los demás.
+      %p Comparte en las redes sociales una palabra a través de Vocablia.
 
 
   %hr
@@ -41,25 +49,23 @@
           .large-3.columns
             %li
               %a.th.radius
-                %img{:src => '/assets/android-main.png'}
+                %img{:src => asset_path('android-main.png')}
           .large-3.columns
             %li
               %a.th.radius
-                %img{:src => '/assets/android-swipe.png'}
+                %img{:src => asset_path('android-swipe.png')}
           .large-3.columns
             %li
               %a.th.radius
-                %img{:src => '/assets/iphone-main.jpg'}
+                %img{:src => asset_path('iphone-main.jpg')}
           .large-3.columns
             %li
               %a.th.radius
-                %img{:src => '/assets/iphone-swipe.jpg'}
+                %img{:src => asset_path('iphone-swipe.jpg')}
       %br
       .row
         %a{:href => "https://play.google.com/store/apps/details?id=cl.ingennia.vocablia"}
           %img{:alt => "Google Play", :src => "https://developer.android.com/images/brand/en_generic_rgb_wo_60.png"}
-
-  %hr
 
   .row
     .large-12.columns
@@ -67,32 +73,28 @@
         El equipo.
         %small Fanáticos de la tecnología y la cultura.
 
-    // Arnaldo Gaspar
-    // Javier Giovannini
-    // Felipe Chaparro
-    // Luis Ortega
     %ul.no-bullet 
       .large-4.columns.text-center
         %li
           %a.th.radius
-            %img{:src => '/assets/javier.png'}
-          %h3
-            Javier Giovannini.
-            %small Desarrollador iPhone.
-      .large-4.columns.text-center
-        %li
-          %a.th.radius
-            %img{:src => '/assets/arnaldo.png'}
+            %img{:src => asset_path('arnaldo.png')}
           %h3
             Arnaldo Gaspar.
-            %small Desarrollador Android y Web.
+            /%small Desarrollador Android y Web.
       .large-4.columns.text-center
         %li
           %a.th.radius
-            %img{:src => '/assets/felipe.jpg'}
+            %img{:src => asset_path('felipe.png')}
           %h3
             Felipe Chaparro.
-            %small Diseñador Gráfico.
+            /%small Diseñador Gráfico.
+      .large-4.columns.text-center
+        %li
+          %a.th.radius
+            %img{:src => asset_path('javier.png')}
+          %h3
+            Javier Giovannini.
+            /%small Desarrollador iPhone.
   %hr      
   .row
     .large-6.columns
@@ -101,8 +103,8 @@
         %small y premios.
       %ul.no-bullet
         %li
-          %a{:href =>"http://www.queveo.cl/2013/08/29/ganadores-apps-y-uso-responsable-de-celulares/"}
-            %p Nota emol.
+          %a{:href =>"http://www.emol.com/noticias/tecnologia/2013/07/26/611203/vocablia-una-aplicacion-chilena-para-aprender-una-nueva-palabra-todos-los-dias.html"}
+            %p Nota en prensa.
         %li
           %a{:href =>"http://www.queveo.cl/2013/08/29/ganadores-apps-y-uso-responsable-de-celulares/"}
             %p Premio fundación Que Veo.

@@ -3,9 +3,7 @@ class CreateDevices < ActiveRecord::Migration
     create_table :devices do |t|
       t.text :token
       t.string :platform
-      t.float :latitude, :default => 0.0
-      t.float :longitude, :default => 0.0
-      t.timestamp :schedule, :default => Time.now ## Un device tiene un schedule
+      t.timestamp :schedule, :default => Time.now
       t.boolean :notification, :default => true
 
       t.timestamps  # Created at and updated at

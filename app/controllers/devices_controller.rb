@@ -13,6 +13,7 @@ class DevicesController < ApplicationController
   # GET /devices/1
   # GET /devices/1.json
   def show
+    logger.debug @device
   end
 
   # GET /devices/new
@@ -34,6 +35,7 @@ class DevicesController < ApplicationController
       if @device.save
         format.html { redirect_to @device, notice: 'Device was successfully created.' }
         format.json { render action: 'show', status: :created, location: @device }
+        #format.json { render json: @device }
       else
         format.html { render action: 'new' }
         format.json { render json: @device.errors, status: :unprocessable_entity }
@@ -68,11 +70,11 @@ class DevicesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_device
-      @device = Device.find_by_id(params[:id]) || Device.find_by_token(params[:id])
+      @device = Device.find_by_id(params[:id]) || Device.find_by_token(params[:id]) || Device.new
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def device_params
-      params.require(:device).permit(:token, :platform, :latitude, :longitude)
+      params.require(:device).permit(:token, :platform, :schedule, :notification)
     end
 end

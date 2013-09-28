@@ -3,8 +3,7 @@ class Device < ActiveRecord::Base
 	def ready
 		same_hour = Time.now.utc.hour == schedule.utc.hour
 		same_min  = Time.now.utc.min  == schedule.utc.min
-		#same_hour and same_min and notification
-		true # vamos a mandar a cada rato
+		same_hour and same_min and notification
 	end
 
 	def self.send_notifications tokens = []
