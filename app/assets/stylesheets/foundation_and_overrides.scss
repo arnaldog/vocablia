@@ -19,7 +19,7 @@
 
 // We use these to control various global styles
 // $body-bg: #fff;
-$body-bg: url('/assets/background.png');
+$body-bg: url(image-path('background.png'));
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -614,7 +614,7 @@ $subheader-font-color: lighten($header-font-color, 20%);
 
 // We use these to control the caption styles
 // $orbit-container-bg: #f5f5f5;
-$orbit-container-bg: url('/assets/background.png');
+$orbit-container-bg: url(image-path('background.png'));
 // $orbit-caption-bg-old-browser: #000;
 // $orbit-caption-bg-old: rgb(0,0,0);
 // $orbit-caption-bg: rgba(0,0,0,0.6);
