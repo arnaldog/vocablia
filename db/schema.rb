@@ -16,15 +16,13 @@ ActiveRecord::Schema.define(version: 20130827041221) do
   create_table "devices", force: true do |t|
     t.text     "token"
     t.string   "platform"
-    t.float    "latitude",     default: 0.0
-    t.float    "longitude",    default: 0.0
-    t.datetime "schedule",     default: '2013-09-06 02:07:20'
+    t.datetime "schedule",     default: '2013-10-14 10:51:17'
     t.boolean  "notification", default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "devices", ["token"], name: "index_devices_on_token", unique: true
+  add_index "devices", ["token"], name: "index_devices_on_token", unique: true, using: :btree
 
   create_table "rapns_apps", force: true do |t|
     t.string   "name",                    null: false
@@ -46,34 +44,34 @@ ActiveRecord::Schema.define(version: 20130827041221) do
     t.string   "app"
   end
 
-  add_index "rapns_feedback", ["device_token"], name: "index_rapns_feedback_on_device_token"
+  add_index "rapns_feedback", ["device_token"], name: "index_rapns_feedback_on_device_token", using: :btree
 
   create_table "rapns_notifications", force: true do |t|
     t.integer  "badge"
     t.string   "device_token",      limit: 64
-    t.string   "sound",                         default: "default"
+    t.string   "sound",                        default: "default"
     t.string   "alert"
     t.text     "data"
-    t.integer  "expiry",                        default: 86400
-    t.boolean  "delivered",                     default: false,     null: false
+    t.integer  "expiry",                       default: 86400
+    t.boolean  "delivered",                    default: false,     null: false
     t.datetime "delivered_at"
-    t.boolean  "failed",                        default: false,     null: false
+    t.boolean  "failed",                       default: false,     null: false
     t.datetime "failed_at"
     t.integer  "error_code"
-    t.text     "error_description", limit: 255
+    t.text     "error_description"
     t.datetime "deliver_after"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "alert_is_json",                 default: false
-    t.string   "type",                                              null: false
+    t.boolean  "alert_is_json",                default: false
+    t.string   "type",                                             null: false
     t.string   "collapse_key"
-    t.boolean  "delay_while_idle",              default: false,     null: false
+    t.boolean  "delay_while_idle",             default: false,     null: false
     t.text     "registration_ids"
-    t.integer  "app_id",                                            null: false
-    t.integer  "retries",                       default: 0
+    t.integer  "app_id",                                           null: false
+    t.integer  "retries",                      default: 0
   end
 
-  add_index "rapns_notifications", ["app_id", "delivered", "failed", "deliver_after"], name: "index_rapns_notifications_multi"
+  add_index "rapns_notifications", ["app_id", "delivered", "failed", "deliver_after"], name: "index_rapns_notifications_multi", using: :btree
 
   create_table "scores", force: true do |t|
     t.integer  "user_id"
@@ -83,8 +81,8 @@ ActiveRecord::Schema.define(version: 20130827041221) do
     t.datetime "updated_at"
   end
 
-  add_index "scores", ["user_id"], name: "index_scores_on_user_id"
-  add_index "scores", ["word_id"], name: "index_scores_on_word_id"
+  add_index "scores", ["user_id"], name: "index_scores_on_user_id", using: :btree
+  add_index "scores", ["word_id"], name: "index_scores_on_word_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "username",               default: "", null: false
@@ -102,8 +100,8 @@ ActiveRecord::Schema.define(version: 20130827041221) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "words", force: true do |t|
     t.string   "name"

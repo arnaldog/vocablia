@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
+ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
@@ -76,7 +76,7 @@ gem 'rails_12factor', group: :production
 # Database localization
 #gem 'globalize3', github: 'svenfuchs/globalize3', :branch => 'rails4'
 
-gem 'devise', github: 'plataformatec/devise', :branch => 'rails4'
+gem 'devise', github: 'plataformatec/devise'
 
 # Simple calendar for model words
 gem "simple_calendar", :github => 'excid3/simple_calendar'
@@ -96,6 +96,6 @@ gem 'configatron'
 # Rapns - Professional grade APNs and GCM for Ruby.
 gem 'rapns', :github => 'ileitch/rapns'
 
-
-
+gem 'therubyracer'
+gem 'execjs'
 
