@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+#ruby "2.0.0"
+ruby "1.9.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
@@ -94,8 +95,8 @@ gem 'whenever', :require => false
 gem 'configatron'
 
 # Rapns - Professional grade APNs and GCM for Ruby.
-gem 'rapns', :github => 'ileitch/rapns'
+gem 'rapns'
 
-gem 'therubyracer'
+gem 'therubyracer', :platforms => :ruby
 gem 'execjs'
 
